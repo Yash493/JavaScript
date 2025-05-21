@@ -10,6 +10,8 @@ console.log(anothr);
 console.log(myyoutubename);
 
 
+// heap- mainly used with the non-primitve datatypes
+// here we pass refrence of value
 
 let useOne={
     email: "yashgaikwad",
