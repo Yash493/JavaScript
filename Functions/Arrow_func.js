@@ -28,7 +28,7 @@ const user={
 
 const chai= ()=> {
     let username="YASH";
-    console.log(this)
+   // console.log(this)
 }
 //chai();
 
@@ -39,3 +39,9 @@ const addTwo=(num1,num2)=>{
 }
 
 console.log(addTwo(10,20));
+
+//We can also use arrow function by implicite function 
+const addTwo1=(num1,num2)=> num1+num2;
+//we dont need to write return word here
+
+console.log(addTwo1(10,20))
