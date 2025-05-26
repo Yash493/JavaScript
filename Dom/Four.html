@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="languges">
+        <li>Javascript</li>
+    </ul>
+    
+</body>
+
+<script>
+
+    function addLange(langName){
+        const lang=document.createElement('li');
+        lang.innerHTML=`${langName}`;
+
+        document.querySelector('.languges').appendChild(lang);
+    }
+   // addLange("python");
+    //    addLange("Java");
+    
+
+    //we can optimize this //we directtky created child here 
+
+    function addLiOpti(liName){
+    const li=document.createElement('li');
+    li.appendChild(document.createTextNode(liName));
+    document.querySelector('.languges').appendChild(li)
+    }
+
+    addLiOpti('python')
+
+    //edit
+
+
+    const secondLang=document.querySelector('li:nth-child(2)')
+    const newLI=document.createElement('li');
+    newLI.textContent='MOJO';
+
+    secondLang.replaceWith(newLI);
+</script>
+</html>
