@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async practice project</title>
+</head>
+<body>
+    <h1>Code with YashGaikwad</h1>
+
+    <button id="stop">
+        stop
+    </button>
+
+    <button id="start">
+        Start
+    </button>
+</body>
+
+<script>
+
+let intervalID;
+const print= function(){
+    console.log('Printing when clicked on start');
+
+}
+
+document.querySelector('#start').addEventListener('click', function (){
+    
+   intervalID= setInterval(print,1000);
+})
+
+
+const printStop=function (){
+    console.log('stoppped');
+
+}
+
+document.querySelector('#stop').addEventListener('click',function(){
+    clearInterval(intervalID,1000)
+})
+</script>
+</html>

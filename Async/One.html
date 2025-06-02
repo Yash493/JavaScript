@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async practice project</title>
+</head>
+<body>
+    <h1>Code with Yash</h1>
+
+    <button id="stop">
+        stop
+    </button>
+</body>
+
+<script>
+
+
+//diffrence betn setTimeout and setInterval is that SetTimeout stop its not-continuos after some time but interval works as timeinterval then continue
+
+
+    const sayYash= function (){
+        console.log('Yash');
+    }
+
+    const changeName=function(){
+        document.querySelector('h1').innerHTML='Chai with Yash';
+    }
+
+    const change=setTimeout(changeName,3000);
+
+
+
+    setTimeout(sayYash,2000);
+   
+
+    // to back to orginal position after setTimeout we use this function
+// clearTimeout(change,9000);
+
+
+
+document.querySelector('#stop').addEventListener('click',function(){
+    clearTimeout(change);
+    console.log('Timeout stopped');
+})
+
+</script>
+</html>

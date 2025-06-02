@@ -1,0 +1,19 @@
+// Javascript:: //Default behvaiour
+  -> synchronus --- one execute at a time 
+  ->  single treaded--- executes on only one thread thats why slow
+
+// execution context
+  -> execute one line of code at a time
+  -> console log -1
+  -> console log -2
+     
+     call stack    memory heap
+
+// Two types of code in Javascript
+// Blocking code                   vs Non-Blocking code
+// -> Block the flow of program   // Does not block code execuation
+//-> read file sync              // read file async
+
+
+
+
